@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>filezilla login</title>
+
+	<link href="css/top.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery-3.3.1.js" ></script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/top.js" type="text/javascript" ></script>
+</head>
+
+<body>
+	<div>
+
+		<div class="top">
+			<ul>
+				<li class="top-style" ><a href="#">文件</a>
+					<ul>
+						<li><a href="#">站点管理器</a></li>
+						<li><a href="#">添加当前连接到站点管理器</a></li>
+						<li><a href="#">新标签</a></li>
+						<li><a href="#">关闭标签</a></li>
+						<li><a href="#">导出</a></li>
+						<li><a href="#">导入</a></li>
+						<li><a href="#">显示正在被编辑的文件</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</li>
+				<li class="top-style" onmouseover="show(this)" onmouseout="hide(this)"><a href="#">编辑</a>
+					<ul>
+						<li><a href="#">网络配置向导</a></li>
+						<li><a href="#">清除个人信息</a></li>
+						<li><a href="#">设置</a></li>
+					</ul>
+				</li>
+				<li class="top-style" onmouseover="show(this)" onmouseout="hide(this)"><a href="#">查看</a>
+					<ul>
+						<li><a href="#">刷新</a></li>
+						<li><a href="#">目录列表过滤器</a></li>
+						<li><a href="#">目录对比</a></li>
+						<li><a href="#">同步浏览</a></li>
+						<li><a href="#">文件列表状态栏</a></li>
+						<li><a href="#">工具栏</a></li>
+						<li><a href="#">快速连接工具栏</a></li>
+						<li><a href="#">消息日志</a></li>
+						<li><a href="#">本地目录树</a></li>
+						<li><a href="#">远程目录</a></li>
+						<li><a href="#">传输队列</a></li>
+					</ul>
+				</li>
+				<li class="top-style" onmouseover="show(this)" onmouseout="hide(this)"><a href="#">传输</a>
+					<ul>
+						<li><a href="#">处理队列</a></li>
+						<li><a href="#">对已存在文件的默认操作</a></li>
+						<li><a href="#">传输类型</a></li>
+						<li><a href="#">保留传输文件的时间戳</a></li>
+						<li><a href="#">速度限制</a></li>
+						<li><a href="#">手动传输</a></li>
+					</ul>
+				</li>
+				<li class="top-style" onmouseover="show(this)" onmouseout="hide(this)"><a href="#">服务器</a>
+					<ul>
+						<li><a href="#">取消当前操作</a></li>
+						<li><a href="#">重新连接</a></li>
+						<li><a href="#">断开连接</a></li>
+						<li><a href="#">搜索远程文件</a></li>
+						<li><a href="#">输入自定义命令</a></li>
+						<li><a href="#">强制显示隐藏文件</a></li>
+					</ul>
+				</li>
+				<li class="top-style" onmouseover="show(this)" onmouseout="hide(this)"><a href="#">书签</a>
+					<ul>
+						<li><a href="#">添加书签</a></li>
+						<li><a href="#">管理书签</a></li>
+					</ul>
+				</li>
+				<li class="top-style" onmouseover="show(this)" onmouseout="hide(this)"><a href="#">帮助</a>
+					<ul>
+						<li><a href="#">检查更新</a></li>
+						<li><a href="#">显示欢迎对话框</a></li>
+						<li><a href="#">获得帮助</a></li>
+						<li><a href="#">报告问题</a></li>
+						<li><a href="#">关于</a></li>
+					</ul>
+				</li>
+			</div>
+
+			<div class="img">
+				<input type="image" title="站点管理器" src="image/站点管理器.jpg" width="30px" height="30px" >
+				<input type="image" title="消息记录" src="image/消息记录.jpg"  width="30px" height="30px" >
+				<input type="image" title="本地目录树" src="image/本地目录树.jpg"  width="30px" height="30px" >
+				<input type="image" title="远程目录树" src="image/远程目录树.jpg"  width="30px" height="30px" >
+				<input type="image" title="传输队列" src="image/传输队列.jpg"  width="30px" height="30px" >
+				<input type="image" title="刷新" src="image/刷新.jpg"  width="30px" height="30px" >
+				<input type="image" title="传输队列处理" src="image/传输队列处理.jpg"  width="30px" height="30px" >
+				<input type="image" title="取消当前操作" src="image/取消当前操作.jpg"  width="30px" height="30px" >
+				<input type="image" title="断开服务器" src="image/断开服务器.jpg" width="30px" height="30px"  >
+				<input type="image" title="重连服务器" src="image/重连服务器.jpg" width="30px" height="30px"  >
+				<input type="image" title="目录列表过滤器" src="image/目录列表过滤器.jpg" width="30px" height="30px"  >
+				<input type="image" title="目录对比" src="image/目录对比.jpg"  width="30px" height="30px" >
+				<input type="image" title="同步浏览" src="image/同步浏览.jpg" width="30px" height="30px"  >
+				<input type="image" title="搜索文件" src="image/搜索文件.jpg"  width="30px" height="30px" >
+			</div>
+
+			<hr />
+
+			<div class="login">
+				<form id="form1" name="form1" action="" method="post">
+					主机：<input id="host" class="login-1" type="text" name="hostip" size="15" />
+					用户名：<input id="username" class="login-1" type="text" name="hostname" size="15"/>
+					密码：<input id="password" class="login-1" type="password" name="pwd" size="15"/>
+					端口：<input id="port" class="login-1" type="text" name="port" size="5"/>
+					<input class="login-1" type="button" value="快速连接" onclick="loginSubmit()"/>
+				</form>
+			</div>
+
+			<div class="site1">
+				本地站点
+				<form id="file-push" method="post" enctype="multipart/form-data" >
+					<input id="upload" type="file" name="head_img"  multiple/>
+					<input class="submit" type="button" value="上传" onclick="fileSubmit()"  disabled/>
+				</form>
+			</div>
+
+			<div class="site2">
+				远程站点
+			</div>
+
+	    </div>
+	</div>
+</body>
+</html>

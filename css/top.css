@@ -1,0 +1,75 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	font-family: '微软雅黑';
+	text-decoration: none;
+	list-style: none;
+}
+body {
+	background-color: #CCC;
+}
+
+div {
+	width:800px;
+	height:800px;
+	position:relative;
+	top:10px;
+	left:50%;
+	margin-left:-400px;
+	text-align: center;
+}
+div.top {
+		height: 50px;
+}
+
+div.img {
+		height: 50px;
+		position: relative;
+}
+div.login {
+		height: 50px;
+		position: relative;
+}
+div.site1 {
+		border:1px solid black;
+		text-align: left;
+		height: 200px;
+
+}
+div.site2 {
+		border:1px solid black;
+		text-align: left;
+		height: 200px;
+}
+
+
+ul li {
+	display: inline-block;
+	padding:10px 20px;
+}
+ul li ul {
+	display: none;
+	position: absolute;
+}
+ul li:hover ul{
+	display: block;
+	background-color: gray;
+	z-index: 6;
+}
+ul li ul li {
+	display:block;
+	text-align: left;
+	padding-left: 2px;
+	border-bottom: 1px solid black;
+}
+ul li ul li:hover{
+	background-color: #09C;
+}
+ul li ul li a:hover{
+	color: #C0C;
+}
+a{
+	color:black;
+}
+
